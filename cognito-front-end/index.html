@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+  <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+  <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+  <script type="text/javascript" src="apigClient.js"></script>
+   
+<title>Dining Concierge Chatbot</title>
+</head>
+<body>
+
+<div class="container">
+      <h3 class="text-center">Dining Concierge Chatbot</h3>
+      <div class="mesgs">
+        <div id="msgs_div" class="msg_history">
+          
+        </div>
+        <div class="type_msg">
+          <div class="input_msg_write">
+            <input type="text" id="chatInput" class="write_msg" placeholder="Type a message" #queryMessage />
+            <button id="msg_send_btn" class="msg_send_btn" type="button">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="chatbot.js"></script>
+</html>
